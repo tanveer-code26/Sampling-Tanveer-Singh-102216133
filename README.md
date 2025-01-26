@@ -43,8 +43,7 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/credit-card-fraud-detection.git
-   cd credit-card-fraud-detection
+   git clone https://github.com/tanveer-code26/Sampling-Tanveer-Singh-102216133
    ```
 
 2. Install the required dependencies:
@@ -118,7 +117,7 @@ Key Observations:
 - Sampling5 performed better for M2 and M5.
 
 ## Contributors
-- **[Tanveer Singh]** - [Your Email/LinkedIn/GitHub Profile]
+- **[Tanveer Singh]** - [https://github.com/tanveer-code26]
 
 ## License
 
