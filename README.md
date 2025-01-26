@@ -1,6 +1,6 @@
-# Credit Card Fraud Detection with SMOTE
+# Credit Card Sampling Assignment using SMOTE
 
-This project focuses on detecting credit card fraud using various machine learning models. The dataset used is highly imbalanced, and techniques like SMOTE (Synthetic Minority Oversampling Technique) are applied to handle this imbalance. The project evaluates multiple models and sampling techniques to find the best performing combination.
+This Project aims to perform various sampling techniques on a dataset, applying machine learning models, and analyzing the results to determine the most effective sampling method for each model. The dataset used is highly imbalanced, and techniques like SMOTE (Synthetic Minority Oversampling Technique) are applied to handle this imbalance. The project evaluates multiple models and sampling techniques to find the best performing combination.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ This project focuses on detecting credit card fraud using various machine learni
 
 ## Overview
 
-Credit card fraud detection is a challenging task due to the imbalanced nature of the data. This project implements:
+This project aims to demonstrate the effectiveness of different sampling techniques on imbalanced datasets. By applying these techniques, we can improve the performance of machine learning models and achieve better accuracy metrics. This project implements:
 
 - Data preprocessing and scaling using `StandardScaler`.
 - Oversampling the minority class using SMOTE.
@@ -61,8 +61,13 @@ To set up the project, follow these steps:
 
 The dataset used is named `Creditcard_data.csv`, which contains:
 
-- **Features**: Transaction details (e.g., transaction amount, time, and other numerical data).
-- **Target**: `Class` column, where 1 represents fraudulent transactions and 0 represents legitimate ones.
+1. Samples: Different data samples used for training and evaluation.
+
+2. Sampling Methods: Techniques applied to handle imbalanced classes.
+
+3. Models: Machine learning models evaluated.
+
+4. Accuracy: Performance metric for each model and sampling method.
 
 Ensure the dataset is in the root directory or update the file path in the code.
 
@@ -71,14 +76,11 @@ Ensure the dataset is in the root directory or update the file path in the code.
 1. Prepare the dataset:
    - Place `Creditcard_data.csv` in the project directory.
 
-2. Run the script:
-   ```bash
-   python fraud_detection.py
-   ```
+2. Open the Jupyter Notebook file Sampling.ipynb and execute the cells.
 
 3. Outputs:
-   - `best_sampling_per_model1.csv`: Contains the best accuracy for each model with the corresponding sampling technique.
-   - `sampling_results1.csv`: Contains detailed results for all combinations of models, sampling techniques, and samples.
+   - `best_sampling_per_model.csv`: Contains the best accuracy for each model with the corresponding sampling technique.
+   - `sampling_results.csv`: Contains detailed results for all combinations of models, sampling techniques, and samples.
 
 ## Models and Techniques
 
@@ -100,9 +102,23 @@ The performance of each model and sampling technique is evaluated using accuracy
 - The best performing model for the given dataset.
 - The impact of sampling percentages and techniques on model performance.
 
-## Contributing
+The table below summarizes the accuracies obtained for each sampling technique and model:
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+| Sampling Technique | M1    | M2    | M3    | M4    | M5    |
+|--------------------|-------|-------|-------|-------|-------|
+| Sampling1          | 50.10 | 59.25 | 90.45 | 78.25 | 81.25 |
+| Sampling2          | 52.24 | 65.27 | 72.41 | 56.24 | 12.85 |
+| Sampling3          | 63.18 | 68.72 | 32.17 | 47.23 | 57.36 |
+| Sampling4          | 69.23 | 28.36 | 42.58 | 33.44 | 32.25 |
+| Sampling5          | 70.12 | 30.25 | 41.85 | 40.12 | 52.74 |
+
+Key Observations:
+- Sampling3 yielded the highest accuracy for M1.
+- Sampling1 was most effective for M3.
+- Sampling5 performed better for M2 and M5.
+
+## Contributors
+- **[Tanveer Singh]** - [Your Email/LinkedIn/GitHub Profile]
 
 ## License
 
